@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="198e18e2-3234-4a2a-af21-cd3e665ed93a" name="Changes" comment="first commit:)">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="198e18e2-3234-4a2a-af21-cd3e665ed93a" name="Changes" comment="second commit:)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditBelowThresholdExeption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/FirstTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/creditcard/CreditCardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/wiktorkrupa/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/wiktorkrupa/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +45,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2MxeCaXmyPe3D4sA69l3yHlJZyZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,10 +55,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "C:/Users/wikto/IdeaProjects/myEcommerce/src/main/java/pl/wiktorkrupa",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.wiktorkrupa.creditcard" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\wikto\IdeaProjects\myEcommerce" />
     </key>
@@ -78,11 +91,19 @@
       <option name="project" value="LOCAL" />
       <updated>1678714819327</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="second commit:)">
+      <created>1678715018735</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678715018735</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit:)" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit:)" />
+    <MESSAGE value="second commit:)" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit:)" />
   </component>
 </project>

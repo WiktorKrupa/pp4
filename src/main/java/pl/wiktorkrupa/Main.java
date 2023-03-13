@@ -23,6 +23,8 @@ public class Main {
             greeter.greet(ladyName);
         }
 
+
+
         names.stream()
                 .filter(name -> name.endsWith("a"))
                 .filter(name -> name.startsWith("J"))
