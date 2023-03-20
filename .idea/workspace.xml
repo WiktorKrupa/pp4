@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="198e18e2-3234-4a2a-af21-cd3e665ed93a" name="Changes" comment="third commit:)">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/tooMuchWithdrawals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/creditcard/CreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/creditcard/CreditCardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +48,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.wiktorkrupa.creditcard" />
@@ -110,8 +112,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreditCardTest.itCantReassignLimitBelow100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myEcommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.wiktorkrupa.creditcard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.wiktorkrupa.creditcard" />
+      <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.creditcard.CreditCardTest" />
+      <option name="METHOD_NAME" value="itCantReassignLimitBelow100" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreditCardTest.itCantReassignLimitBelow100" />
         <item itemvalue="JUnit.CreditCardTest.itCantAssignLimitTwice" />
         <item itemvalue="JUnit.CreditCardTest.itCantAssignLimitBelow100V2" />
         <item itemvalue="JUnit.CreditCardTest.itCantAssignLimitBelow100" />
@@ -175,16 +194,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit:)" />
     <option name="LAST_COMMIT_MESSAGE" value="first commit:)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditCard.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

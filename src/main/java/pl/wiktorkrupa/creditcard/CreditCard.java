@@ -8,6 +8,7 @@ public class CreditCard {
     public CreditCard(String cardNumber) {
     }
     public int limitAssigned= 0;
+    public int numberOfWithdrawals =0;
 
     public void assignCredit(BigDecimal creditAmount) {
         if (limitAssigned == 1){
@@ -30,6 +31,19 @@ public class CreditCard {
     }
 
     public void withdraw(BigDecimal amountWithdrawn) {
-       this.balance= balance.subtract(amountWithdrawn);
+
+       if (numberOfWithdrawals<10) {
+           this.balance = balance.subtract(amountWithdrawn);
+           numberOfWithdrawals += 1;
+       }
+       else throw new tooMuchWithdrawals();
+    }
+
+    public void reassignCredit(BigDecimal newBalance) {
+        if (isBelowCreditTreshold(newBalance)){
+            throw new CreditBelowThresholdException();
+        }
+        this.balance = newBalance;
+
     }
 }
