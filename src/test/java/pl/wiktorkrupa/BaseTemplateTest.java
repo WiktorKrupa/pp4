@@ -2,7 +2,7 @@ package pl.wiktorkrupa;
 
 import org.junit.jupiter.api.Test;
 
-public class FirstTest {
+public class BaseTemplateTest {
 
     @Test
     void testIt() {

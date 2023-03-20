@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="198e18e2-3234-4a2a-af21-cd3e665ed93a" name="Changes" comment="first commit:)">
+    <list default="true" id="198e18e2-3234-4a2a-af21-cd3e665ed93a" name="Changes" comment="third commit:)">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -39,7 +39,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2MxeCaXmyPe3D4sA69l3yHlJZyZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,13 +49,74 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.wiktorkrupa.creditcard" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\wikto\IdeaProjects\myEcommerce" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CreditCardTest.itCantAssignLimitBelow100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myEcommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.wiktorkrupa.creditcard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.wiktorkrupa.creditcard" />
+      <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.creditcard.CreditCardTest" />
+      <option name="METHOD_NAME" value="itCantAssignLimitBelow100" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreditCardTest.itCantAssignLimitBelow100V2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myEcommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.wiktorkrupa.creditcard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.wiktorkrupa.creditcard" />
+      <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.creditcard.CreditCardTest" />
+      <option name="METHOD_NAME" value="itCantAssignLimitBelow100V2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreditCardTest.itCantAssignLimitTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myEcommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.wiktorkrupa.creditcard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.wiktorkrupa.creditcard" />
+      <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.creditcard.CreditCardTest" />
+      <option name="METHOD_NAME" value="itCantAssignLimitTwice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CreditCardTest.itCantAssignLimitTwice" />
+        <item itemvalue="JUnit.CreditCardTest.itCantAssignLimitBelow100V2" />
+        <item itemvalue="JUnit.CreditCardTest.itCantAssignLimitBelow100" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,8 +144,47 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="67398568-77f0-4eab-b705-ff2b01e06967">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit:)" />
     <option name="LAST_COMMIT_MESSAGE" value="first commit:)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditCard.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

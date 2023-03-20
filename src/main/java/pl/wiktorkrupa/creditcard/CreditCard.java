@@ -7,16 +7,29 @@ public class CreditCard {
 
     public CreditCard(String cardNumber) {
     }
+    public int limitAssigned= 0;
 
-    public void assignLimit(BigDecimal creditAmount) {
-        if (creditAmount.compareTo(BigDecimal.valueOf(100)) > 1) {
-            throw new CreditBelowThresholdExeption();
+    public void assignCredit(BigDecimal creditAmount) {
+        if (limitAssigned == 1){
+            throw new LimitAlreadyAssignedException();
+        }
+        if (isBelowCreditTreshold(creditAmount)) {
+            throw new CreditBelowThresholdException();
         }
         this.balance = creditAmount;
+        limitAssigned = 1;
+    }
+
+    private static boolean isBelowCreditTreshold(BigDecimal creditAmount) {
+        return creditAmount.compareTo(BigDecimal.valueOf(100)) < 0;
     }
 
 
     public BigDecimal getBalance() {
-        return BigDecimal.valueOf(1000);
+        return balance;
+    }
+
+    public void withdraw(BigDecimal amountWithdrawn) {
+       this.balance= balance.subtract(amountWithdrawn);
     }
 }
