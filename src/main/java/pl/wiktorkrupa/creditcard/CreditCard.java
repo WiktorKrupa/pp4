@@ -31,8 +31,10 @@ public class CreditCard {
     }
 
     public void withdraw(BigDecimal amountWithdrawn) {
-
-       if (numberOfWithdrawals<10) {
+       if (amountWithdrawn.compareTo(balance)>0){
+           throw new withdrawalOverTheLimit();
+       }
+       if (numberOfWithdrawals<10 ) {
            this.balance = balance.subtract(amountWithdrawn);
            numberOfWithdrawals += 1;
        }
@@ -45,5 +47,9 @@ public class CreditCard {
         }
         this.balance = newBalance;
 
+    }
+
+    public void repay(BigDecimal money) {
+        this.balance = this.balance.add(money);
     }
 }

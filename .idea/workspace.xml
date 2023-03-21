@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="198e18e2-3234-4a2a-af21-cd3e665ed93a" name="Changes" comment="third commit:)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/tooMuchWithdrawals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/withdrawalOverTheLimit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/creditcard/CreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/creditcard/CreditCardTest.java" afterDir="false" />
@@ -64,7 +64,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="CreditCardTest.itCantAssignLimitBelow100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreditCardTest.itAllowsToRepay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myEcommerce" />
       <extension name="coverage">
         <pattern>
@@ -74,7 +74,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.wiktorkrupa.creditcard" />
       <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.creditcard.CreditCardTest" />
-      <option name="METHOD_NAME" value="itCantAssignLimitBelow100" />
+      <option name="METHOD_NAME" value="itAllowsToRepay" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,12 +128,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreditCardTest.itCantWithdrawOverTheLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myEcommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.wiktorkrupa.creditcard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.wiktorkrupa.creditcard" />
+      <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.creditcard.CreditCardTest" />
+      <option name="METHOD_NAME" value="itCantWithdrawOverTheLimit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreditCardTest.itAllowsToRepay" />
+        <item itemvalue="JUnit.CreditCardTest.itCantWithdrawOverTheLimit" />
         <item itemvalue="JUnit.CreditCardTest.itCantReassignLimitBelow100" />
         <item itemvalue="JUnit.CreditCardTest.itCantAssignLimitTwice" />
         <item itemvalue="JUnit.CreditCardTest.itCantAssignLimitBelow100V2" />
-        <item itemvalue="JUnit.CreditCardTest.itCantAssignLimitBelow100" />
       </list>
     </recent_temporary>
   </component>

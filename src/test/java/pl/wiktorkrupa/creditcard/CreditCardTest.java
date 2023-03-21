@@ -3,6 +3,7 @@ package pl.wiktorkrupa.creditcard;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.math.BigDecimal;
+import java.net.CacheRequest;
 
 public class CreditCardTest {
     @Test
@@ -107,6 +108,30 @@ public class CreditCardTest {
     }
 
     @Test
+    void itCantWithdrawOverTheLimit(){
+        CreditCard card = new CreditCard("1234-5678");
+        card.assignCredit(BigDecimal.valueOf(100));
+        assertThrows(
+                withdrawalOverTheLimit.class,
+                () -> card.withdraw(BigDecimal.valueOf(101)));
+        assertDoesNotThrow(() -> card.withdraw(BigDecimal.valueOf(100)));
+
+
+    }
+
+    @Test
+    void itCantWithdrawWhenNotEnoughMoney(){
+        CreditCard card = new CreditCard("1234-5678");
+        card.assignCredit(BigDecimal.valueOf(100));
+        card.withdraw(BigDecimal.valueOf(90));
+        assertThrows(
+                withdrawalOverTheLimit.class,
+                () -> card.withdraw(BigDecimal.valueOf(15)));
+
+
+    }
+
+    @Test
     void itCantReassignLimitBelow100() {
         CreditCard card = new CreditCard("1234-5678");
         card.assignCredit(BigDecimal.valueOf(1000));
@@ -117,6 +142,16 @@ public class CreditCardTest {
                 () -> card.reassignCredit(BigDecimal.valueOf(99)));
 
         assertDoesNotThrow(() -> card.reassignCredit(BigDecimal.valueOf(100)));
+    }
+
+    @Test
+    void itAllowsToRepay(){
+        CreditCard card  = new CreditCard("1234-5678");
+        card.assignCredit(BigDecimal.valueOf(100));
+        card.withdraw(BigDecimal.valueOf(90));
+        card.repay(BigDecimal.valueOf(100));
+
+        assertEquals(card.getBalance(), BigDecimal.valueOf(110));
     }
 
 
