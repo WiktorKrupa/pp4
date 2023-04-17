@@ -1,4 +1,4 @@
-package pl.wiktorkrupa;
+package pl.wiktorkrupa.playground;
 
 import org.junit.jupiter.api.Test;
 
