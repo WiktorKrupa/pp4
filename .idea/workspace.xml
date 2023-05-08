@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="198e18e2-3234-4a2a-af21-cd3e665ed93a" name="Changes" comment="third commit:)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/ProductCatalogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/ReassignCreditExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/CatalogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/HashMapProductStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/CartStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Sales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/sales/CollectingProductsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/web/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/DbProductStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/DbProductStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/ProductCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/ProductCatalogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/ProductStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/ProductStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/creditcard/CreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/creditcard/CreditCardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/productcatalog/ProductCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/productcatalog/ProductCatalogTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +63,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "C:/Users/wikto/IdeaProjects/myEcommerce/src/main/java/pl/wiktorkrupa",
     "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "build.tools"
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="pl.wiktorkrupa.productcatalog" />
+      <recent name="pl.wiktorkrupa.sales" />
       <recent name="pl.wiktorkrupa.creditcard" />
+      <recent name="pl.wiktorkrupa.productcatalog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\wikto\IdeaProjects\myEcommerce" />

@@ -6,57 +6,52 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.math.BigDecimal;
 import java.util.List;
 
-//schema.org/Product
-
 public class ProductCatalogTest {
 
     @Test
-    void itAllowsToListMyProducts(){
+    void itAllowsToListMyProducts() {
+        //Arrange
         ProductCatalog catalog = thereIsProductCatalog();
-
-
+        //Act
         List<Product> products = catalog.allProducts();
-
-
-
+        //Assert
         assertListIsEmpty(products);
     }
 
     @Test
-    void itAllowsToAddProduct(){
+    void itAllowsToAddProduct() {
+        //Arrange
         ProductCatalog catalog = thereIsProductCatalog();
+        //Act
+        String productId = catalog.addProduct("lego set 8083", "nice one");
 
-        String productId = catalog.addProduct("lego set 1234", "sports car");
-
+        //Assert
         List<Product> products = catalog.allProducts();
         assert 1 == products.size();
-
-
-
-
     }
+
     @Test
-    void itAllowsToLoadProductDetails(){
+    void itAllowsToLoadProductDetails() {
         ProductCatalog catalog = thereIsProductCatalog();
 
-        String productId = catalog.addProduct("lego set 1234", "sports car");
+        String productId = catalog.addProduct("lego set 8083", "nice one");
 
         Product loadedProduct = catalog.loadById(productId);
-        assert loadedProduct.getID().equals((productId));
-        assert loadedProduct.getName().equals("lego set 1234");
-
+        assert loadedProduct.getId().equals(productId);
+        assert loadedProduct.getName().equals("lego set 8083");
     }
-    @Test
-    void itAllowsToChangePrice(){
-        ProductCatalog catalog = thereIsProductCatalog();
 
-        String productId = catalog.addProduct("lego set 1234", "sports car");
+    @Test
+    void itAllowsToChangePrice() {
+        ProductCatalog catalog = thereIsProductCatalog();
+        String productId = catalog.addProduct("lego set 8083", "nice one");
 
         catalog.changePrice(productId, BigDecimal.valueOf(20.20));
 
         Product loadedProduct = catalog.loadById(productId);
         assertEquals(BigDecimal.valueOf(20.20), loadedProduct.getPrice());
     }
+
     @Test
     void itAllowsToAssignImage() {
         ProductCatalog catalog = thereIsProductCatalog();
@@ -106,11 +101,11 @@ public class ProductCatalogTest {
 
     private ProductCatalog thereIsProductCatalog() {
         return new ProductCatalog(
-                new DbProductStorage()
+                new HashMapProductStorage()
         );
     }
+
     private void assertListIsEmpty(List<Product> products) {
         assert 0 == products.size();
     }
-
 }

@@ -1,6 +1,5 @@
 package pl.wiktorkrupa.productcatalog;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 public interface ProductStorage {
@@ -8,9 +7,7 @@ public interface ProductStorage {
 
     void add(Product newProduct);
 
-    List<Product> allPublishedProducts();
-
     Product loadById(String productId);
 
-    void changePriceById(String productId, BigDecimal price);
+    List<Product> allPublishedProducts();
 }

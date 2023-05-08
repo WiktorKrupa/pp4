@@ -1,5 +1,6 @@
 package pl.wiktorkrupa.productcatalog;
 
+
 import java.math.BigDecimal;
 import java.util.UUID;
 
@@ -11,19 +12,26 @@ public class Product {
     private String image;
     private boolean online;
 
-    public Product(UUID uuid, String name, String desc){
+    public Product(UUID uuid, String name, String desc) {
         this.uuid = uuid.toString();
         this.name = name;
         this.desc = desc;
-
     }
 
-    public String getID() {
+    public String getId() {
         return uuid;
+    }
+
+    public UUID getUUID() {
+        return UUID.fromString(uuid);
     }
 
     public String getName() {
         return name;
+    }
+
+    public void changePrice(BigDecimal newPrice) {
+        price = newPrice;
     }
 
     public BigDecimal getPrice() {
@@ -35,13 +43,16 @@ public class Product {
     }
 
     public void setImage(String imageKey) {
+
         image = imageKey;
     }
 
     public void setOnline(boolean online) {
+
         this.online = online;
     }
-    public boolean getOnline(){
+
+    public boolean getOnline() {
         return online;
     }
 }
