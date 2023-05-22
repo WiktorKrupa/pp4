@@ -4,20 +4,28 @@ import java.util.Optional;
 
 import org.springframework.boot.env.PropertiesPropertySourceLoader;
 
+import static org.springframework.cglib.core.TypeUtils.add;
+
 public class Sales {
     private CartStorage cartStorage;
+    private ProductDetailsProvider productDetailsProvider;
 
     public void addToCart(String customerId, String productId) {
-        Cart customersCart = loadForCustomer(customerId)
-        .orElse(Cart.empty());
+        Cart customerCart = loadForCustomer(customerId)
+            .orElse(Cart.empty());
 
-        ProductDetails product = getProductDetails(productId)
-                .orElseThrow(() -> 
+        ProductDetails product = loadProductDetails(productId)
+                .orElseThrow(() -> new NoSuchProductException());
 
-        customersCart,add(product);
+        customerCart.add(product);
 
-        cartStorage.save(customerId, customersCart);
 
+
+    }
+
+
+    private Optional<ProductDetails> loadProductDetails(String productId){
+        return productDetailsProvider.load(productId);
     }
 
     private Optional<Cart> loadForCustomer(String customerId) {

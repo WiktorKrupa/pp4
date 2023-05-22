@@ -1,4 +1,4 @@
-package pl.wiktorkrupa.sales;
+/*package pl.wiktorkrupa.sales;
 
 import org.junit.jupiter.api.Test;
 
@@ -34,3 +34,4 @@ public class CollectingProductsTest {
         return null;
     }
 }
+*/

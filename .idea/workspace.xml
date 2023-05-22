@@ -5,25 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="198e18e2-3234-4a2a-af21-cd3e665ed93a" name="Changes" comment="third commit:)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/ReassignCreditExceptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/CatalogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/HashMapProductStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/CartStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Sales.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/sales/CollectingProductsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/NoSuchProductException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/ProductDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/ProductDetailsProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/playground/JdbcPlayground.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/web/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/creditcard/CreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/DbProductStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/DbProductStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/ProductCatalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/ProductCatalogController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/ProductStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/productcatalog/ProductStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/creditcard/CreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/creditcard/CreditCardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/productcatalog/ProductCatalogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/productcatalog/ProductCatalogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Sales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/sales/CollectingProductsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/sales/CollectingProductsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -61,11 +57,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_directory_selection": "C:/Users/wikto/IdeaProjects/myEcommerce/src/main/java/pl/wiktorkrupa",
+    "last_opened_file_path": "D:/IdeaProjects/myEcommerce",
     "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "advanced.settings"
+    "settings.editor.selected.configurable": "build.tools"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -75,6 +73,8 @@
       <recent name="pl.wiktorkrupa.productcatalog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\myEcommerce\src\main\resources" />
+      <recent name="D:\IdeaProjects\myEcommerce\src\main\resources\static" />
       <recent name="C:\Users\wikto\IdeaProjects\myEcommerce" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -86,7 +86,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.JdbcPlayground.select">
     <configuration name="CreditCardTest.itAllowsToRepay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myEcommerce" />
       <extension name="coverage">
@@ -103,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreditCardTest.itCantWithdrawOverTheLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcPlayground.helloWorldViaDB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myEcommerce" />
       <extension name="coverage">
         <pattern>
@@ -111,41 +111,41 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.wiktorkrupa.creditcard" />
-      <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.creditcard.CreditCardTest" />
-      <option name="METHOD_NAME" value="itCantWithdrawOverTheLimit" />
+      <option name="PACKAGE_NAME" value="pl.wiktorkrupa.playground" />
+      <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.playground.JdbcPlayground" />
+      <option name="METHOD_NAME" value="helloWorldViaDB" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductCatalogTest.itAllowsToAddProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcPlayground.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myEcommerce" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.wiktorkrupa.productcatalog.*" />
+          <option name="PATTERN" value="pl.wiktorkrupa.playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.wiktorkrupa.productcatalog" />
-      <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.productcatalog.ProductCatalogTest" />
-      <option name="METHOD_NAME" value="itAllowsToAddProduct" />
+      <option name="PACKAGE_NAME" value="pl.wiktorkrupa.playground" />
+      <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.playground.JdbcPlayground" />
+      <option name="METHOD_NAME" value="insert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductCatalogTest.itAllowsToListMyProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcPlayground.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myEcommerce" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.wiktorkrupa.productcatalog.*" />
+          <option name="PATTERN" value="pl.wiktorkrupa.playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.wiktorkrupa.productcatalog" />
-      <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.productcatalog.ProductCatalogTest" />
-      <option name="METHOD_NAME" value="itAllowsToListMyProducts" />
+      <option name="PACKAGE_NAME" value="pl.wiktorkrupa.playground" />
+      <option name="MAIN_CLASS_NAME" value="pl.wiktorkrupa.playground.JdbcPlayground" />
+      <option name="METHOD_NAME" value="select" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdbcPlayground.select" />
+        <item itemvalue="JUnit.JdbcPlayground.insert" />
+        <item itemvalue="JUnit.JdbcPlayground.helloWorldViaDB" />
         <item itemvalue="JUnit.CreditCardTest.itAllowsToRepay" />
         <item itemvalue="JUnit.ProductCatalogTest.itAllowsToLoadProductDetails" />
-        <item itemvalue="JUnit.ProductCatalogTest.itAllowsToAddProduct" />
-        <item itemvalue="JUnit.ProductCatalogTest.itAllowsToListMyProducts" />
-        <item itemvalue="JUnit.CreditCardTest.itCantWithdrawOverTheLimit" />
       </list>
     </recent_temporary>
   </component>
