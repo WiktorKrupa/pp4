@@ -2,33 +2,34 @@ package pl.wiktorkrupa.sales;
 
 import java.util.Optional;
 
-import org.springframework.boot.env.PropertiesPropertySourceLoader;
-
-import static org.springframework.cglib.core.TypeUtils.add;
-
 public class Sales {
     private CartStorage cartStorage;
     private ProductDetailsProvider productDetailsProvider;
-
+    public Sales(CartStorage cartStorage, ProductDetailsProvider productDetailsProvider) {
+        this.cartStorage=cartStorage;
+        this.productDetailsProvider=productDetailsProvider;
+    }
     public void addToCart(String customerId, String productId) {
-        Cart customerCart = loadForCustomer(customerId)
-            .orElse(Cart.empty());
+        Cart customersCart = loadForCustomer(customerId)
+                .orElse(Cart.empty());
 
-        ProductDetails product = loadProductDetails(productId)
+        ProductDetailsProvider product = getProductDetails(productId)
                 .orElseThrow(() -> new NoSuchProductException());
 
-        customerCart.add(product);
+        customersCart.add(product);
 
-
-
+        cartStorage.save(customerId,customersCart);
     }
 
-
-    private Optional<ProductDetails> loadProductDetails(String productId){
-        return productDetailsProvider.load(productId);
+    private Optional<ProductDetailsProvider> getProductDetails(String productId) {
+        return productDetailsProvider.loadCartForProduct(productId);
     }
 
     private Optional<Cart> loadForCustomer(String customerId) {
         return cartStorage.load(customerId);
+    }
+
+    public Offer getCurrentOffer(String customer) {
+        return new Offer();
     }
 }

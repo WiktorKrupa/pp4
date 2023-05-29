@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="198e18e2-3234-4a2a-af21-cd3e665ed93a" name="Changes" comment="third commit:)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/NoSuchProductException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/ProductDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/ProductDetailsProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/playground/JdbcPlayground.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Offer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/SalesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/CartStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/CartStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/ProductDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/ProductDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/ProductDetailsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/ProductDetailsProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wiktorkrupa/sales/Sales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/sales/CollectingProductsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/wiktorkrupa/sales/CollectingProductsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -55,17 +51,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_directory_selection": "C:/Users/wikto/IdeaProjects/myEcommerce/src/main/java/pl/wiktorkrupa",
-    "last_opened_file_path": "D:/IdeaProjects/myEcommerce",
-    "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "build.tools"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/wikto/IdeaProjects/myEcommerce/src/main/java/pl/wiktorkrupa&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/myEcommerce&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.wiktorkrupa.sales" />

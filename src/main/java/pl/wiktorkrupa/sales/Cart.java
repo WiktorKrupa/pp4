@@ -1,11 +1,23 @@
 package pl.wiktorkrupa.sales;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Cart {
-    public static Cart empty() {
+    Map<ProductDetailsProvider,Integer> products;
+
+    public Cart() {
+        this.products = new HashMap<>();
+    }
+    public static Cart empty(){
         return new Cart();
     }
 
-    public void add(ProductDetails product){
+    public void add(ProductDetailsProvider product) {
+        products.put(product, 1);
+    }
 
+    public int itemsCount() {
+        return products.size();
     }
 }

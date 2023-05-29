@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import pl.wiktorkrupa.productcatalog.HashMapProductStorage;
 import pl.wiktorkrupa.productcatalog.ProductCatalog;
+import pl.wiktorkrupa.sales.CartStorage;
+import pl.wiktorkrupa.sales.ProductDetailsProvider;
+import pl.wiktorkrupa.sales.Sales;
 
 import java.math.BigDecimal;
 
@@ -30,5 +33,10 @@ public class App {
         productCatalog.publishProduct(productId2);
 
         return productCatalog;
+    }
+
+    @Bean
+    Sales createSales() {
+        return new Sales(new CartStorage(), new ProductDetailsProvider());
     }
 }
